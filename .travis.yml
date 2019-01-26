@@ -8,4 +8,4 @@ addons:
     token: 295461a8d41d8898e697159fd752f1975be9ca52 # encrypted value of your token
 script:
   # other script steps might be done before running the actual analysis
-  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.organization=jacobrakestraw-github -Dsonar.login=jacobrakestraw-github -Dsonar.branch=master
